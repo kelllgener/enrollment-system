@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('Lora-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu md';
+    src: url('Ubuntu-Bold.ttf') format('truetype');
+}
+

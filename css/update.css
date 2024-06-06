@@ -1,0 +1,63 @@
+.container {
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    font-size: 16px;
+    height: 100%;
+    border: 0px none #050505;
+    background: #eaeaea;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appointment-form {
+    min-height: 100vh;
+}
+.appointment-form {
+    padding: 15px;
+
+}
+.update-header {
+    text-align: center;
+}
+.appointment-form h3 {
+    font-family: 'Lora', sans-serif;
+    text-decoration: underline rgb(78, 78, 196);
+    text-underline-offset: 15px;
+    padding-top: 30px;
+}
+
+.appointment-form p {
+    font-size: 1.5rem;
+    
+}
+.row h5{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-decoration: underline rgb(78, 78, 196);
+    text-underline-offset: 10px;
+}
+
+.form-check {
+    text-align: justify;
+}
+.profile-img {
+    margin-bottom: 20px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile_img {
+    display: none;
+    visibility: none;
+    
+}
+.profile_label {
+    cursor: pointer;
+}
+.profile_label p {
+    font-size: .7rem;
+}
+

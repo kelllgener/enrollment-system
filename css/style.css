@@ -1,0 +1,1050 @@
+:root {
+    --green: #14A44D;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', serif;
+    font-size: 16px;
+    height: 100%;
+
+}
+
+/* NAVBAR */
+header {
+    background-color: var(--green);
+    padding: .3em 0;
+    align-items: center;  
+
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.site-title h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto 0;
+    display: none;
+}
+
+.site-title {
+    display: flex;
+    width: 100%;
+}
+
+.site-title img {
+    height: 40px;
+    border-radius: 50%;
+    padding: 0 .5em;
+}
+
+.site-title button {
+    margin: 0 .5em;
+    color: #fff;
+}
+
+.navbar-nav {
+    border-left: 1px solid #fff;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: .25em 0;
+    text-wrap: nowrap;
+}
+
+nav a p {
+    display: none;
+    margin: auto 0;
+}   
+
+nav a:hover,
+nav a:focus {
+    color: #fff;
+}
+
+nav img {
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 .5em;
+    
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    max-width: 300px;
+    border: 1px solid #DBDCDE ;
+    border-left: none;
+    background-color: var(--green);
+    transition: 0.25s ease-out;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.collapse .show {
+    transition: 0.25s ease-out;
+}
+
+
+.sidebar .profile {
+    text-align: center;
+    padding: 3em 0;
+    color: #fff;
+}
+.sidebar img {
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: .3em;
+    border: 1px solid;
+}
+.sidebar h6 {
+    font-size: .875rem;
+    font-family: 'Lora', sans-serif;
+    
+}
+
+
+
+.position-sticky .list-group-item,
+.accordion-button {
+    font-size: .875rem;
+    color: #fff;
+    border-bottom: 1px solid #DBDCDE;
+    font-family: 'Ubuntu md', serif;
+    background-color: var(--green);
+    
+}
+
+.position-sticky .list-group-item:hover,
+.position-sticky .list-group-item:focus,
+.accordion-anchor:hover,
+.accordion-anchor:focus {
+    transition: .2s ease;
+    background-color: #ffffff;
+    color: var(--green);
+}
+
+.accordion-body {
+    border-bottom: 1px solid #DBDCDE;
+    font-family: 'Ubuntu md', sans-serif;
+    font-size: .875rem;
+    padding: 0;
+    margin: auto;
+}
+.accordion-body .accordion-anchor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.accordion-button:hover {
+    box-shadow:none;
+    border: none;
+    color: #54B4D3;
+}
+
+.sidebar .active {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #FBFBFB;
+    color: #14A44D;
+}
+
+
+/* 
+===================
+LOGIN NAVBAR
+===================
+*/
+
+nav button {
+    font-size: .875rem;
+    font-family: 'Ubuntu md', serif;
+    background: none;
+    border: 2px #fff solid;
+    border-radius: 2px; 
+    padding: .1em 1.2em;
+    color: #fff;
+    transition: .2s ease;
+}
+nav button:hover,
+nav button:focus {
+    border: 2px solid ;
+    transition: .2s ease-out;
+    color: #332D2D;
+}
+
+
+.container-login {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #eaeaea;
+    
+}
+.login-image-container {
+    margin-bottom: 1.25em;
+}
+.columns {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+}
+
+.cols img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+.login-function-container {
+    background-color: #14A44D;
+    margin-bottom: 1.25em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-info {
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: .5em;
+    color: #fff;
+    
+}
+.navigation-button-login {
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: .5em 0;
+}
+
+/* 
+===================
+TYPOGRAPHY
+===================
+*/
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.contact-info h6 {
+    font-weight: 900;
+    
+}
+li a,
+.contact-info h6,
+.contact-info a {
+    color: #fff;
+    font-size: .875rem;
+}
+.enrollment-form h3 {
+    text-align: center;
+}
+.enrollment-form h3,
+.enrollment-form h5,
+.article-feature h5 {
+    text-decoration: underline rgb(78, 78, 196);
+    text-underline-offset: 8px;
+}
+
+/* HOME */
+
+.article-feature {
+    padding: 1em;
+    text-align: justify;
+    background: #eaeaea;
+    margin: .875em 0;
+}
+
+/* ---------------- */
+/* 
+===================
+ENROLLMENT FORM
+===================
+*/
+
+.content-section {
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+.enrollment-form h3 {
+    margin-bottom: 1em;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.second-personal-info {
+    margin-bottom: 1em;
+}
+
+/* 
+===================
+MODAL LOGIN
+===================
+*/
+.login-content {
+    background: linear-gradient(#14A44D, white);
+}
+.logo {
+    border-radius: 50%;
+    height: 40px;
+    margin-left: 20px;
+}
+.login-form {
+    font-family: 'Ubuntu', sans-serif;
+}
+.forgot-pass {
+    display: flex;
+    justify-content: space-around;
+
+}
+.forgot-pass,
+.fa-unlock-keyhole,
+.no-account {
+    font-size: .8rem;
+}
+.forgot-pass,
+.fa-unlock-keyhole,
+.no-account span {
+    text-align: left;
+    color: #3B71CA;
+}
+
+.forgotpass-form {
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    
+}
+
+
+/* 
+===================
+DASHBOARD
+===================
+*/
+.main-dashboard {
+    min-height: 100vh;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.cols-title {
+    font-family: 'Lora', serif;
+    border-bottom: 1px solid #000;
+    margin-bottom : 2em;
+    padding: 0 0.5em;
+}
+.dashboard-main-body {
+    max-width: 90%;
+    margin: 0 1.5em;
+    
+}
+.dashboard-body {
+    margin-bottom: 1em;
+}
+
+.dashboard-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 90%;
+    text-align: center;
+    border: none;
+    border-radius: 10% / 50%;
+    color: white;
+    margin: 1em 1em;
+    transition: .15s ease-in-out;
+}
+.dashboard-item:hover {
+    border: 3px solid #332D2D;
+    transition: .15s ease;
+}
+
+.dashboard-item h3 {
+    font-size: 2rem;
+
+}
+.dashboard-item p {
+    font-size: 1.2rem;
+    border-top: 1px solid;  
+    
+}
+
+.dashboard-table-div {
+    margin: 0 auto;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    width: 95%;
+}
+.dashboard-table {
+    margin: 0 2em;
+    border: 1px solid #eaeaea;
+    
+}
+.schedule-table {
+    font-size: .8rem;
+}
+
+.dashboard-table h5 {
+    font-size: 1.2rem;
+    
+}
+
+.dashboard-caption {
+    caption-side: top;
+
+}
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+    width: 90%; 
+}
+.charts .pie-chart {
+    width: 400px;
+    height: 500px;
+}
+.charts .bar-graph {
+    width: 400px; 
+    height: 500px;
+}
+
+
+/* 
+===================
+MOST OF THE PAGES
+===================
+*/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+
+}
+.cols-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lora', serif;
+    border-bottom: 1px solid #DBDCDE;
+    margin-bottom : 2em;
+    padding: 0.5em 0.5em;
+}
+
+
+.cols-title p {  
+    display: none;
+}
+
+
+.search-div {
+    display: flex;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.section-title img {
+    height: 30px;
+    margin: 0 auto;
+}
+
+.function-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    margin-bottom: 1em;
+
+}
+.convert-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+    margin: .5em 0;
+}
+
+.convert .btn:hover,
+.convert-btn .btn:hover {
+    color: #54B4D3;
+    border: 2px solid #54B4D3;
+}
+
+.convert-btn .btn {
+    margin: 0 .175em;
+}
+
+.function-buttons .add {
+    height: 100%;
+    order: -1;
+
+}
+
+.function-buttons .convert {
+    height: 100%;
+    order: 2;
+}
+
+
+.table {
+    min-width: 700px;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 1em;
+}
+.thead {
+    font-family: 'Ubuntu md', sans-serif;
+    font-weight: 900;
+}
+.table img {
+    height: 30px;
+}
+
+.application-details {
+    margin: 0 2em;
+    
+}
+.print-hidden {
+    display: none;
+}
+
+/* EDIT PROFILE */
+
+.main-edit {
+    min-height: 100vh;
+}
+.edit-account-head,
+.edit-account {
+    margin: 0 1.5em;
+    margin-bottom: 1em;
+}
+
+.edit-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.account-details {
+    font-size: .875rem;
+    
+}
+.email-image-section {
+    display: flex;
+    flex-direction: column;
+}
+.email-image-section img {
+    border-radius: 50%;
+    width: 90px;
+    text-align: center;
+}
+.email-profile-section {
+    width: 100%;
+    margin: 0 1em;
+    padding: 1em;
+    border: 20px solid #eaeaea;
+    margin-bottom: 3em;
+    border-bottom: none;
+    
+}
+
+/* .form-image-button {
+    display: flex;
+    justify-content: end;
+} */
+.password-section {
+    width: 100%;
+    margin: 0 1em;
+    padding: 1em;
+    border: 20px solid #eaeaea;
+    border-top: none;
+}
+
+.section-content {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 90vh;
+    
+    
+}
+.section-content .student {
+    border: 10px solid #dfdede;
+    background-color: #dfdede;
+    width: 200px;
+    margin: 2em auto;
+    height: 200px;
+    padding: .5em;
+
+}
+.section-content img {
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+
+}
+.section-content p {
+    font-weight: 900;
+}
+
+/*
+======================
+ABOUT US
+======================
+ */
+.aboutus-col {
+    border: 20px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 1.875em;
+}
+
+.aboutus-col:nth-child(2) {
+    border-bottom: none;
+}
+
+.aboutus-col:nth-child(4) {
+    border-top: none;
+}
+
+.aboutus-col img {
+    height: 200px;
+    margin: 1em 0;
+
+}
+.vision {
+    color: #000;
+    width: auto;
+    padding: 0 1em;
+
+}
+.vision h3 {
+    text-decoration: underline rgb(78, 78, 196);
+    text-underline-offset: 7px;
+}
+
+
+/* 
+===================
+FOOTER
+===================
+*/
+
+
+@media (max-width: 280px) {
+    .function-buttons {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .convert {
+        margin-top: 1em;
+    }
+
+    .aboutus-col img {
+        height: 120px;
+
+        
+    }
+}
+
+@media (min-width: 675px) {
+    /* 
+    ===================
+    LOGIN NAVIGATION 
+    ===================
+    */
+    
+
+    /* ---------------- */
+    .site-title h1 {
+        display: block;
+    }
+
+    
+    /* 
+    ===================
+    DASHBOARD
+    ===================
+    */
+
+    .dashboard-body {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .title-show h4 {
+        display: inline-block;
+        padding: .220rem 0;
+    }
+
+    /* ---------------- */
+
+    .aboutus-col {
+        flex-direction: row;
+        width: 90%;
+        min-width: 700px;
+        
+    }
+
+    .aboutus-col .right-order {
+        order: 2;
+    }
+    .vision {
+        padding: 2em;
+    }
+
+    .dashboard-table-div {
+        width: 80%;
+    }
+
+    
+
+    /* 
+    ===================
+    DASHBOARD
+    ===================
+    */
+
+
+    /* ---------------- */
+    /* 
+    ===================
+    MOST OF THE PAGES
+    ===================
+    */
+    .main-section {
+        flex-direction: row;
+        
+    }
+
+    .function-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .function-buttons .add {
+        order: -1;
+        height: auto;
+    }
+
+    .main-section-article {
+        width: 100%;
+        
+    }
+
+    .cols-title p {  
+        display: inline-block;
+        margin: 0;
+    }
+    .search-div {
+        width: auto;
+    }
+    .cols-table {
+        margin: 0 2em;
+    }
+
+    .function-buttons {
+        padding: 0;
+    }
+
+    .section-content .student {
+        margin: 2em;
+    }
+
+
+    
+    
+
+
+    .table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ---------------- */
+
+    .application-details {
+        margin: 0 5em;
+        
+    }
+    
+    .edit-account {
+        flex-direction: row;
+
+    }
+    .email-profile-section {
+        margin: auto;
+    }
+    .email-profile-section,
+    .password-section {
+        border: 20px solid #eaeaea;
+        height: 100%;
+        
+    }
+    .password-section {
+        height: 100%;
+    }
+
+    
+
+    
+    
+}
+@media (min-width: 990px) {
+
+    
+
+    nav a p {
+        display: block;
+    }
+    .site-title h1 {
+        display: block;
+    }
+    .site-title button {
+        display: none;
+    }
+
+        /* 
+    ===================
+    ENROLLMENT FORM
+    ===================
+    */
+    .sidebar {
+        position: sticky;
+        height: 100%;
+        min-height: 100vh;
+    }
+    /* ---------------- */
+
+    /* 
+    ===================
+    LOGIN NAVIGATION 
+    ===================
+    */
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .contact-info p {
+        margin: 0 2em;
+        padding: 1em;
+
+    }
+    .contact-info h6 {
+        margin: auto;
+    }
+    /* ---------------- */
+
+    /* 
+    ===================
+    ENROLLMENT FORM
+    ===================
+    */
+
+    .col-names {
+        display: flex;
+        flex-direction: row;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ---------------- */
+
+    /* HOME */
+
+    .article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-feature {
+        margin: 0 1em;
+    }
+    /* --------------- */
+
+    /* 
+    ===================
+    DASHBOARD
+    ===================
+    */
+
+    .column {
+        display: flex;
+        flex-direction: row;    
+    }
+    .main-container {
+        width: 100%;
+    }
+
+    .dashboard-main-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    .dashboard-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    
+
+    /* ---------------- */
+
+
+
+    /* 
+    ===================
+    MOST OF THE PAGES
+    ===================
+    */
+
+    .cols-table {
+        margin: 0 4em;
+
+    }
+    .table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .search-div {
+        display: flex;
+        margin: 0 3em;
+    }
+    .cols-title h4 {
+        margin: 0 2em;
+    }
+
+    .aboutus-col {
+        flex-direction: row;
+        width: 75%;
+        min-width: 700px;
+    }
+
+
+}
+
+@media print {
+
+    @page {
+        size: landscape; /* Set the orientation to portrait */
+        margin: 1cm; /* Set margins as needed */
+      }
+    header {
+        display: none;
+    }
+    .print-hidden {
+        display: block;
+    }
+    
+    .thead {
+        font-size: .9rem;
+    }
+    tbody {
+        font-size: .775rem;
+    }
+    .cols-title {
+        display: none;
+    }
+    .function-buttons {
+        display: none;
+    }
+    .table {
+        overflow-x: hidden;
+    }
+    table .action {
+        display: none;
+    }
+    table caption {
+        display: none;
+    }
+    .pagination {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+
+
+    /* DASHBOARD */
+
+    .schedule-button {
+        display: none;
+    }
+    
+}
