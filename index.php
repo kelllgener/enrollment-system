@@ -1,6 +1,6 @@
 <?php
 
-require_once "../class/pre_register_class.php";
+require_once "./class/pre_register_class.php";
 $login = new PreRegisterConfig();
 
 $username = "";
@@ -41,16 +41,16 @@ if (isset($_POST["login"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/logo.jpg">
-    <link rel="stylesheet" href="../fonts/fonts.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../mdb/css/mdb.min.css">
-    <link rel="stylesheet" href="../icons/css/all.min.css">
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./mdb/css/mdb.min.css">
+    <link rel="stylesheet" href="./icons/css/all.min.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
 
     <!-- JAVASCRIPT LINKS -->
-    <script src="../mdb/js/mdb.min.js" defer></script>
-    <script src="../icons/js/all.js" defer></script>
-    <script src="../sweetalert/sweetalert2.all.js"></script>
+    <script src="./mdb/js/mdb.min.js" defer></script>
+    <script src="./icons/js/all.js" defer></script>
+    <script src="./sweetalert/sweetalert2.all.js"></script>
     <title>Burol Elementary School Enrollment System</title>
 
 
@@ -60,7 +60,7 @@ if (isset($_POST["login"])) {
     <header>
         <div class="container-fluid container-nav">
             <div class="site-title">
-                <img src="../images/logo.jpg" alt="" />
+                <img src="./images/logo.jpg" alt="" />
                 <h1>Burol Elementary School Enrollment System</h1>
             </div>
             <nav>
@@ -121,7 +121,7 @@ if (isset($_POST["login"])) {
     <div class="container container-login">
         <div class="columns login-image-container">
             <div class="cols hover-zoom bg-image">
-                <img src="../images/bg.png" alt="" class="login-image">
+                <img src="./images/bg.png" alt="" class="login-image">
             </div>
         </div>
 
@@ -149,14 +149,14 @@ if (isset($_POST["login"])) {
 
             <div class="columns content-section">
 
-                <?php (isset($_GET["enroll"])) ? include "enroll.php" : include "home.php"; ?>
+                <?php (isset($_GET["enroll"])) ? include "./log/enroll.php" : include "./log/home.php"; ?>
 
             </div>
             
         </div>
         
     </div>
-    <?php include "../includes/footer.php"; ?>
+    <?php include "./includes/footer.php"; ?>
     
 </body>
 </html>
